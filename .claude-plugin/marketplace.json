@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jacket-skills",
+  "owner": {
+    "name": "real-jacket",
+    "url": "https://github.com/real-jacket"
+  },
+  "metadata": {
+    "description": "Personal collection of portable Agent Skills",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/real-jacket/skills"
+  },
+  "plugins": [
+    {
+      "name": "macos-proxy-leak-audit",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/macos-proxy-leak-audit"],
+      "description": "Audit WebRTC and DNS leaks on macOS behind Clash Verge / TUN, trace where system DNS really comes from, and isolate the foreign browser without breaking domestic WebRTC.",
+      "category": "security",
+      "tags": ["macos", "clash", "webrtc", "dns", "privacy", "network"]
+    }
+  ]
+}

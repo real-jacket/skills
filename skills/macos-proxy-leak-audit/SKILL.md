@@ -1,6 +1,7 @@
 ---
 name: macos-proxy-leak-audit
-description: "在 macOS 上排查和修复 Clash Verge/TUN 场景的 WebRTC 与 DNS 泄漏：追溯系统 DNS 真实来源（含 114.114.114.114 占位地址）、IPv6 旁路、scoped resolver、PAC 残留、TUN 路由与 Clash DNS 上游，并复测代理出口和递归解析器。Use when users report WebRTC/DNS leaks, real IP exposure, DNS being rewritten, or ask where macOS DNS comes from under Clash/TUN."
+description: "Audit and fix WebRTC and DNS leaks on macOS behind Clash Verge / TUN: trace the real source of system DNS (including the 114.114.114.114 placeholder), IPv6 bypass, scoped resolvers, PAC residue, TUN routes, and the Clash DNS upstream, then re-test the proxy exit and the recursive resolver. This skill should be used when the user reports a WebRTC leak, a DNS leak, real IP exposure, DNS being rewritten or hijacked, or asks where macOS DNS comes from under Clash/TUN, whether their real IP is exposed, or how to isolate a browser from domestic WebRTC. 在 macOS 上排查 Clash Verge/TUN 场景的 WebRTC 与 DNS 泄漏时使用。"
+license: MIT
 ---
 
 # macOS Proxy Leak Audit
